@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/brucificus/html-antlr4-typescript.git"
   },
-  "author": "Bruce Markham",
-  "license": "ISC",
+  "author": "Tom Everett, Bruce Markham",
+  "license": "BSD",
   "bugs": {
     "url": "https://github.com/brucificus/html-antlr4-typescript/issues"
   },

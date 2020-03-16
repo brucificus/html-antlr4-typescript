@@ -14,7 +14,8 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run test",
     "postversion": "git push && git push --tags",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "postpublish": "cp -r package.json ./dist/package.json && cp -r package-lock.json ./dist/package-lock.json"
   },
   "repository": {
     "type": "git",

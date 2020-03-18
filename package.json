@@ -1,6 +1,6 @@
 {
   "name": "html-antlr4",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "",
   "files": [
     "dist/**/*"
@@ -12,12 +12,13 @@
     "build.tsc": "tsc",
     "build": "npm run build.antlr4ts && npm run build.tsc",
     "prepare": "npm run build",
-    "prepublishOnly" : "npm run test",
-    "postversion" : "git push && git push --tags"
+    "prepublishOnly": "npm run test",
+    "postversion": "git push && git push --tags",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brucificus/html-antlr4-typescript.git"
+    "url": "https://github.com/brucificus/html-antlr4-typescript.git"
   },
   "author": "Tom Everett, Bruce Markham",
   "license": "BSD",
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/brucificus/html-antlr4-typescript#readme",
   "devDependencies": {
     "antlr4ts-cli": "^0.5.0-alpha.3",
+    "semantic-release": "^17.0.4",
     "typescript": "^3.8.3"
   },
   "dependencies": {

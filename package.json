@@ -1,19 +1,44 @@
 {
   "name": "html-antlr4",
-  "version": "0.0.1",
+  "version": "0.1.0-alpha.1",
   "description": "",
-  "main": "index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build.cpygrammars": "cpy grammars/html/*.g4 ./antlr4ts_out/",
+    "build.antlr4ts": "antlr4ts -visitor antlr4ts_out/*.g4",
+    "postbuild.antlr4ts": "rimraf antlr4ts_out/*.g4",
+    "build.tsc": "tsc",
+    "build": "npm run build.cpygrammars && npm run build.antlr4ts && npm run build.tsc",
+    "prepublishOnly": "npm run build && npm run test",
+    "postversion": "git push && git push --tags",
+    "semantic-release": "semantic-release --debug",
+    "semantic-release-dry-run": "semantic-release --dry-run --debug"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brucificus/html-antlr4-typescript.git"
+    "url": "https://github.com/brucificus/html-antlr4-typescript.git"
   },
-  "author": "Bruce Markham",
-  "license": "ISC",
+  "author": "Tom Everett, Bruce Markham",
+  "license": "BSD",
   "bugs": {
     "url": "https://github.com/brucificus/html-antlr4-typescript/issues"
   },
-  "homepage": "https://github.com/brucificus/html-antlr4-typescript#readme"
+  "homepage": "https://github.com/brucificus/html-antlr4-typescript#readme",
+  "devDependencies": {
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.5",
+    "antlr4ts-cli": "^0.5.0-alpha.3",
+    "cpy-cli": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.0.4",
+    "semantic-release-gitmoji": "^1.3.3",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.3"
+  }
 }

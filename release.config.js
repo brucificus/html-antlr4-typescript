@@ -35,7 +35,7 @@ module.exports = {
         assets: [
           {
             path: "./dist/*.tgz",
-            name: "html-antlr4-${nextRelease.version}"
+            name: "html-antlr4-${nextRelease.version}.tgz"
           }
         ]
       }

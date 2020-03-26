@@ -1,4 +1,4 @@
-# html-antlr4-typescript - TypeScript/JavaScript HTML lexer & parser uing ANTLR 4 & ANTLR4TS
+# html-antlr4-typescript - TypeScript/JavaScript HTML lexer & parser using ANTLR4TS
 
 ## Overview
 

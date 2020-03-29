@@ -1,5 +1,3 @@
-# html-antlr4-typescript - TypeScript/JavaScript HTML lexer & parser using ANTLR4TS
-
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=foxguardsolutions/Foundation)](https://dependabot.com)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/html-antlr4)
 ![npm latest release](https://img.shields.io/npm/v/html-antlr4/latest)
@@ -12,7 +10,7 @@
 
 ## Overview
 
-This repository is a continuous-delivery focused synthesis of the [ANTLR4 HTML grammar](https://github.com/antlr/grammars-v4/tree/master/html) and the Optimized ANLTR TypeScript target provided by [antlr4ts](https://github.com/tunnelvisionlabs/antlr4ts).
+This is a continuous-delivery focused synthesis of the [ANTLR4 HTML grammar](https://github.com/antlr/grammars-v4/tree/master/html) and the Optimized ANLTR TypeScript target provided by [antlr4ts](https://github.com/tunnelvisionlabs/antlr4ts).
 
 - **Releases:** See the [GitHub Releases](https://github.com/brucificus/html-antlr4-typescript/releases) page for release notes and
   links to the distribution.

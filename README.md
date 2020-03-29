@@ -2,6 +2,7 @@
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/html-antlr4)
 ![npm latest release](https://img.shields.io/npm/v/html-antlr4/latest)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](./LICENSE.txt)
+![Release](https://github.com/brucificus/html-antlr4-typescript/workflows/Release/badge.svg)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)

@@ -1,3 +1,5 @@
+# html-antlr4
+
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=foxguardsolutions/Foundation)](https://dependabot.com)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/html-antlr4)
 ![npm latest release](https://img.shields.io/npm/v/html-antlr4/latest)
@@ -8,6 +10,8 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)
+
+An HTML lexer & parser that provides both visitor and listener patterns to traverse the parse tree.
 
 ## Overview
 

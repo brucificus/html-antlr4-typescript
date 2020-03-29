@@ -8,5 +8,5 @@
     "esModuleInterop": true
   },
   "include": ["index.ts", "antlr4ts_out"],
-  "exclude": ["node_modules", "grammars", "**/__tests__/*"]
+  "exclude": ["node_modules", "grammars", "tests/**"]
 }

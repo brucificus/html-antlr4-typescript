@@ -1,5 +1,5 @@
-import parseTree from "./parseTree"
-import CountHtmlElementsVisitor from "./CountHtmlElementsVisitor"
+import parseTree from "./support/parseTree"
+import CountHtmlElementsVisitor from "./support/CountHtmlElementsVisitor"
 
 
 describe('HtmlElements', function() {

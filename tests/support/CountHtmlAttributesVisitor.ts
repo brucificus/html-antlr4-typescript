@@ -1,7 +1,7 @@
-import { HTMLParserVisitor, ScriptletContext } from "../";
+import { HTMLParserVisitor, HtmlAttributeContext } from "../../lib";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree";
 
-export default class CountScriptletsVisitor
+export default class CountHtmlAttributesVisitor
   extends AbstractParseTreeVisitor<number>
   implements HTMLParserVisitor<number> {
 
@@ -13,7 +13,7 @@ export default class CountScriptletsVisitor
     return aggregate + nextResult;
   }
 
-  visitScriptlet(context: ScriptletContext): number {
+  visitHtmlAttribute(context: HtmlAttributeContext): number {
     return 1 + super.visitChildren(context);
   }
 }

@@ -1,5 +1,5 @@
-import parseTree from "./parseTree"
-import CountHtmlAttributesVisitor from "./CountHtmlAttributesVisitor"
+import parseTree from "./support/parseTree"
+import CountHtmlAttributesVisitor from "./support/CountHtmlAttributesVisitor"
 
 
 describe('HtmlAttributes', function() {

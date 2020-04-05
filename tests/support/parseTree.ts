@@ -1,4 +1,4 @@
-import { HTMLLexer, HTMLParser } from "../";
+import { HTMLLexer, HTMLParser } from "../../lib";
 import { ANTLRInputStream, CommonTokenStream } from "antlr4ts";
 
 

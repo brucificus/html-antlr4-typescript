@@ -11,7 +11,7 @@ export default function scanAndValidateParseTrees(inputDirectory: File, exclusio
         describe(inputDirectory.getName(), () => {
             // for each of the files in the directory
             inputDirectory.listFiles().forEach(inputDirectoryFile => {
-                // if the file is a VB6 relevant file
+                // if the file is an HTML relevant file
                 if (inputDirectoryFile.isFile() && inputDirectoryFile.getExtension().toLowerCase()===".html") {
                     validateParseTrees(inputDirectoryFile);
                 }

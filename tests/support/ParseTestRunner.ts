@@ -1,5 +1,5 @@
 /**
- * VB6 parse runner for Jest tests.
+ * Parser runner for Jest tests.
  */
 
 import { createLogger, ILogger } from './infrastructure/Logger';

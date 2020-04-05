@@ -1,0 +1,47 @@
+(htmlDocument
+    (htmlElements
+        (htmlElement <
+            (htmlTagName a) >
+            (htmlContent
+                (htmlChardata some text)) < /
+                    (htmlTagName a) >)
+                    (htmlMisc ))
+    (htmlElements
+        (htmlElement <
+            (htmlTagName a)
+            (htmlAttribute
+                (htmlAttributeName id) =
+                    (htmlAttributeValue "anId")) >
+                        (htmlContent
+                            (htmlChardata some more text)) < /
+                                (htmlTagName a) >) 
+                                    (htmlMisc ))
+    (htmlElements 
+        (htmlElement < 
+            (htmlTagName a) 
+                (htmlAttribute 
+                    (htmlAttributeName id) = 
+                        (htmlAttributeValue "anotherId")) 
+                            (htmlAttribute 
+                                (htmlAttributeName href) = 
+                                    (htmlAttributeValue "anHref")) > 
+                                        (htmlContent 
+                                            (htmlChardata a last bit of text)) < / 
+                                                (htmlTagName a) >)
+                                                (htmlMisc ))
+    (htmlElements
+        (htmlElement <
+            (htmlTagName strong) >
+                (htmlContent
+                    (htmlElement <
+                        (htmlTagName p) >
+                            (htmlContent
+                                (htmlChardata and a paragraph)) < /
+                                    (htmlTagName p) >)
+                                    (htmlElement <
+                                        (htmlTagName p) >
+                                            (htmlContent
+                                                (htmlChardata and another paragraph)) < / 
+                                                    (htmlTagName p) >)) < /
+                                                        (htmlTagName strong) >)
+                                                        (htmlMisc )))

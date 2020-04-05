@@ -1,5 +1,5 @@
-import parseTree from "./parseTree"
-import CountScriptletsVisitor from "./CountScriptletsVisitor"
+import parseTree from "./support/parseTree"
+import CountScriptletsVisitor from "./support/CountScriptletsVisitor"
 
 
 describe('Scriptlets', function() {

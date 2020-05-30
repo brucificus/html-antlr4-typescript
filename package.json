@@ -1,6 +1,6 @@
 {
   "name": "html-antlr4",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "An HTML lexer & parser that provides both visitor and listener patterns to traverse the parse tree.",
   "files": [
     "lib/**/*"

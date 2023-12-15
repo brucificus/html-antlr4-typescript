@@ -9,9 +9,9 @@
   "scripts": {
     "prepare": "husky install",
     "test": "jest",
-    "build.cpygrammars": "cpy grammars/html/*.g4 ./antlr4ts_out/",
-    "build.antlr4ts": "antlr4ts -visitor antlr4ts_out/*.g4",
-    "postbuild.antlr4ts": "rimraf antlr4ts_out/*.g4",
+    "build.cpygrammars": "cpy \"grammars/html/*.g4\" --flat ./antlr4ts_out",
+    "build.antlr4ts": "cd ./antlr4ts_out/ && antlr4ts -visitor *.g4",
+    "postbuild.antlr4ts": "rimraf --glob \"antlr4ts_out/*.g4\"",
     "build.tsc": "tsc",
     "build": "npm run build.cpygrammars && npm run build.antlr4ts && npm run build.tsc",
     "prepublishOnly": "npm run build && npm run test",

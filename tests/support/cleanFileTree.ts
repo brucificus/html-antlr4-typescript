@@ -3,11 +3,10 @@
  * anymore
  */
 export function cleanFileTree(input: string): string {
-    let result = input.replace(/(\\r)?(\\n)|(\\r)/g, "");
-    result = result.replace(/\r?\n|\r/g, "");
-    result = result.replace(/\t/g, " ");
-    result = result.replace(/[\s]+/g, " ")
-    result = result.replace(/([\s]+)\)/, ")");
-    result = result.replace(/(\\")/g, "\"");
+    let result = input.trim();
+    result = result.replace(/\\t/gm, " ");
+    result = result.replace(/(\s+((\\r)?(\\n)|(\\r))?)+/gm, " ");
+    result = result.replace(/(\s+(\r?\n|\r)?)+/gm, " ");
+    result = result.replace(/(\s+\))+/gm, ")");
     return result;
 }

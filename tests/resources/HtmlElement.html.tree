@@ -1,47 +1,29 @@
 (htmlDocument
     (htmlElements
-        (htmlElement <
-            (htmlTagName a) >
+        (htmlElement < a >
             (htmlContent
-                (htmlChardata some text)) < /
-                    (htmlTagName a) >)
+                (htmlChardata some text)) < / a >)
                     (htmlMisc ))
     (htmlElements
-        (htmlElement <
-            (htmlTagName a)
-            (htmlAttribute
-                (htmlAttributeName id) =
-                    (htmlAttributeValue "anId")) >
-                        (htmlContent
-                            (htmlChardata some more text)) < /
-                                (htmlTagName a) >) 
-                                    (htmlMisc ))
-    (htmlElements 
-        (htmlElement < 
-            (htmlTagName a) 
-                (htmlAttribute 
-                    (htmlAttributeName id) = 
-                        (htmlAttributeValue "anotherId")) 
-                            (htmlAttribute 
-                                (htmlAttributeName href) = 
-                                    (htmlAttributeValue "anHref")) > 
-                                        (htmlContent 
-                                            (htmlChardata a last bit of text)) < / 
-                                                (htmlTagName a) >)
-                                                (htmlMisc ))
-    (htmlElements
-        (htmlElement <
-            (htmlTagName strong) >
+        (htmlElement < a
+            (htmlAttribute id = "anId") >
                 (htmlContent
-                    (htmlElement <
-                        (htmlTagName p) >
-                            (htmlContent
-                                (htmlChardata and a paragraph)) < /
-                                    (htmlTagName p) >)
-                                    (htmlElement <
-                                        (htmlTagName p) >
-                                            (htmlContent
-                                                (htmlChardata and another paragraph)) < / 
-                                                    (htmlTagName p) >)) < /
-                                                        (htmlTagName strong) >)
-                                                        (htmlMisc )))
+                    (htmlChardata some more text)) < / a >) 
+                        (htmlMisc ))
+    (htmlElements 
+        (htmlElement < a
+                (htmlAttribute id = "anotherId")
+                    (htmlAttribute href = "anHref") >
+                        (htmlContent 
+                            (htmlChardata a last bit of text)) < / a >)
+                                (htmlMisc ))
+    (htmlElements
+        (htmlElement < strong >
+            (htmlContent
+                (htmlElement < p >
+                    (htmlContent
+                        (htmlChardata and a paragraph)) < / p >)
+                            (htmlElement < p >
+                                    (htmlContent
+                                        (htmlChardata and another paragraph)) < / p >)) < / strong >)
+                                            (htmlMisc )))

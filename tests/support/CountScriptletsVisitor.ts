@@ -1,4 +1,4 @@
-import { HTMLParserVisitor, ScriptletContext } from "../../lib";
+import { HTMLParserVisitor, ScriptletOrSeaWsContext } from "../../lib";
 import { AbstractParseTreeVisitor } from "antlr4ts/tree";
 
 export default class CountScriptletsVisitor
@@ -13,7 +13,10 @@ export default class CountScriptletsVisitor
     return aggregate + nextResult;
   }
 
-  visitScriptlet(context: ScriptletContext): number {
-    return 1 + super.visitChildren(context);
+  visitScriptletOrSeaWs(context: ScriptletOrSeaWsContext) {
+    if (context.SCRIPTLET()) {
+      return 1;
+    }
+    return 0;
   }
 }

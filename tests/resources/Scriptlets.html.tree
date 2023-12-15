@@ -1,14 +1,11 @@
 (htmlDocument
-    (scriptlet <% Response.Write "Hello, world!" %>)
+    (scriptletOrSeaWs <% Response.Write "Hello, world!" %>)
+    (scriptletOrSeaWs)
     (htmlElements
-        (htmlElement <
-            (htmlTagName a) >
-                (htmlContent
-                    (htmlElement
-                        (scriptlet <% Response.Write "Hello, world!" %>))) < /
-                            (htmlTagName a) >)
-                            (htmlMisc ))
+        (htmlElement < a >
+            (htmlContent
+                (htmlElement <% Response.Write "Hello, world!" %>)) < / a >)
+                    (htmlMisc ))
     (htmlElements
-        (htmlElement
-            (scriptlet <%= "Hello, world!" %>))
+        (htmlElement <%= "Hello, world!" %>)
             (htmlMisc )))
